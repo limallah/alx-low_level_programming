@@ -4,7 +4,7 @@ nclude "main.h"
 * leet - Encode to 1337
 * @n: string to be changed
 * Return: Converted string
-**/
+*/
 
 char *leet(char *n)
 {
