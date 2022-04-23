@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
 * leet - Encode to 1337
@@ -19,9 +19,8 @@ char *leet(char *n)
 			if (n[i] == s1[j])
 			{
 				n[i] = s2[j];
-			}
+																	}
 		}
-	
 	}
 	return (n);
 }
