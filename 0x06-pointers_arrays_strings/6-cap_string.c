@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* cap_string - Capitalizes words on a string
-* @n: string to convert character from
-* Return: Converted string
-**/
+ * cap_string - Capitalizes words on a string
+ * @n: string to convert character from
+ * Return: Converted string
+ */
 
 char *cap_string(char *n)
 {
@@ -20,24 +20,23 @@ char *cap_string(char *n)
 		switch (n[i])
 		{
 			case ',':
-																			case ';':
-																			case '.':
-																			case '!':
-																			case '?':
-																			case '"':
-																			case '(':
-																			case ')':
-																			case '{':
-																			case '}':
-																			case ' ':
-																			case '\n':
-																			case '\t':
-																				if (n[i + 1] > 96 && n[i + 1] < 123)
-																				{
-																					n[i + 1] = n[i + 1] - 32;
-																				}
-																		}
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				if (n[i + 1] > 96 && n[i + 1] < 123)
+				{
+					n[i + 1] = n[i + 1] - 32;
+				}
+		}
 	}
 	return (n);
 }
-
