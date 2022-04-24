@@ -5,7 +5,7 @@
  * @dest: Destination string
  * @src: the source of the string
  * Return: Returns a pointer to the resulting string dest
- **/
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -21,7 +21,9 @@ char *_strcat(char *dest, char *src)
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
-		i++;																j++;															}
+		i++;
+		j++;
+	}
 	dest[i] = '\0';
 	return (dest);
 }
