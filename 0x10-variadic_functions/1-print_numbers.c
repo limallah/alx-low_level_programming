@@ -18,15 +18,15 @@ TASK 1
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list mynumbers;
-	unsigned int myindex;
+	unsigned int index;
 
 	va_start(mynumbers, n);
 
-	for (myindex = 0; myindex < n; myindex++)
+	for (index = 0; index < n; index++)
 	{
 		printf("%d", va_arg(mynumbers, int));
 
-		if (myindex != (n - 1) && separator != NULL)
+		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 
