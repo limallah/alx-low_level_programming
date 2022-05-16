@@ -1,7 +1,8 @@
 TASK 1
+
 /*
  * File: 1-print_numbers.c
- * Author: Halima Ibrahim
+ * Auth: Tolulope Fakunle
  */
 
 #include "variadic_functions.h"
