@@ -17,14 +17,14 @@ TASK 1
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list mynumbers;
+	va_list numbers;
 	unsigned int index;
 
-	va_start(mynumbers, n);
+	va_start(numbers, n);
 
 	for (index = 0; index < n; index++)
 	{
-		printf("%d", va_arg(mynumbers, int));
+		printf("%d", va_arg(numbers, int));
 
 		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
@@ -32,5 +32,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
-	va_end(mynumbers);
+	va_end(numbers);
 }
